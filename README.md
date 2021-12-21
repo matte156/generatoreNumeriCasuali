@@ -1,1 +1,1 @@
-# generatoreNumeriCasuali
+# Generatore di numeri casuali
