@@ -2,8 +2,7 @@
 #define CREANUMERICASUALIH
 
 int * getRandoms();
-int * getRandomsWithParameters(int numberToGenerate);
-int * generateRandoms(int n);
+int * getRandomsWithParameter(int numberToGenerate);
 unsigned int getNumber();
 
 #endif

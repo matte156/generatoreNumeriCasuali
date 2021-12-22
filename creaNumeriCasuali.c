@@ -9,10 +9,10 @@
 unsigned int getNumber()
 {
 	unsigned int number;
-
 	char buffer[MAXDIGITS];
 	int counter = 0;
-
+	
+	printf("Quanti numeri vuoi generare\n");
 	while((buffer[counter]=getchar())>='0' && buffer[counter]<='9' && counter<(MAXDIGITS-1) && buffer[counter]!='\n')
 		counter++;
 	buffer[++counter]='\0';
@@ -21,7 +21,7 @@ unsigned int getNumber()
 }
 
 // genera tot numero(specificato negli arguments) di numeri casuali e restituisce un puntatore ad essi
-int * generateRandoms(int n)
+int * getRandomsWithParameter(int n)
 {
 	unsigned int nToGenerate;
 	unsigned int * random;
@@ -53,16 +53,7 @@ int * getRandoms()
 	int * randoms;
 
 	nToGenerate=getNumber();
-	randoms = generateRandoms(nToGenerate);
+	randoms = getRandomsWithParameter(nToGenerate);
 
 	return randoms;	
-}
-
-/* lancia la funzione generateRandoms utilizzando come parametro quello fornito a questa funzione. Restituisce un puntatore 	*
- * utilizzando a numeri casuali				 									*/
-int * getRandomsWithParameters(int n)
-{
-	int * randoms = generateRandoms(n);
-
-	return randoms;
 }
