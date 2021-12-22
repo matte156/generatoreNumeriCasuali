@@ -24,12 +24,12 @@ unsigned int getNumber()
 int * getRandomsWithParameter(int n)
 {
 	unsigned int nToGenerate;
-	unsigned int * random;
+	int * random;
 	int i = 0;
 
 	nToGenerate=n;
 
-	random=(char *) malloc(sizeof(int)*(nToGenerate+1));
+	random=(int *) malloc(sizeof(int)*(nToGenerate+1));
 	if(random==NULL)
 	{
 		printf("Error\n");
