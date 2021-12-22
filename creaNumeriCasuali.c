@@ -29,7 +29,7 @@ int * getRandomsWithParameter(int n)
 
 	nToGenerate=n;
 
-	random=malloc(sizeof(int)*(nToGenerate+1));
+	random=(char *) malloc(sizeof(int)*(nToGenerate+1));
 	if(random==NULL)
 	{
 		printf("Error\n");
