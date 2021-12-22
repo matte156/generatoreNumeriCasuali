@@ -12,7 +12,7 @@ unsigned int getNumber()
 	char buffer[MAXDIGITS];
 	int counter = 0;
 	
-	printf("Quanti numeri vuoi generare\n");
+	printf("Quanti numeri vuoi generare? ");
 	while((buffer[counter]=getchar())>='0' && buffer[counter]<='9' && counter<(MAXDIGITS-1) && buffer[counter]!='\n')
 		counter++;
 	buffer[++counter]='\0';
